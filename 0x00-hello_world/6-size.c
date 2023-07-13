@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	puts("Size of a char: sizeof(char)");
-	puts("Size of an int: sizeof(int)");
-	puts("Size of a long long int: sizeof(long long)");
-	puts("Size of a long int: sizeof(long)");
-	puts("Size of a float: sizeof(float)");
+	puts("Size of a char: %lu byte(s),sizeof(char)");
+	puts("Size of an int: %lu byte(s),sizeof(int)");
+	puts("Size of a long long int: %lu byte(s),sizeof(long long)");
+	puts("Size of a long int: %lu byte(s),sizeof(long)");
+	puts("Size of a float: %lu byte(s),sizeof(float)");
 	return (0);
 }
