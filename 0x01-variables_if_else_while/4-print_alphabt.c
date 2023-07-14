@@ -2,15 +2,18 @@
 /**
  * main - Entry point
  * Description - program that writes alphabets in lowercase except e&e
- * Return : always 0 (Successful);
+ * Return: 0 if successful, non zero otherwise
  */
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z' && c != 'q' && c != 'e'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 	}
 	putchar('\n');
 	return (0);
