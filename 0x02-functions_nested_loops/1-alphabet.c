@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
+ * Description: 'prints alphabets a-z to stdout'
  * Return: Always 0.
  */
 void print_alphabet(void)
