@@ -15,7 +15,7 @@ void print_times_table(int n)
 			for (y = 0; y <= n; y++)
 			{
 				int product = x * y;
-				
+
 				if (y != 0)
 				{
 					_putchar(',');
@@ -30,10 +30,7 @@ void print_times_table(int n)
 						_putchar(' ');
 						_putchar(' ');
 					}
-					else
-					{
-						_putchar(' ');
-					}
+					_putchar(' ');
 				}
 				if (product >= 100)
 				{
@@ -46,10 +43,7 @@ void print_times_table(int n)
 					_putchar(product / 10 + '0');
 					_putchar(product % 10 + '0');
 				}
-				else
-				{
-					_putchar(product + '0');
-				}
+				_putchar(product + '0');
 			}
 			_putchar('\n');
 		}
