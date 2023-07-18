@@ -1,14 +1,9 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 /**
- * main - check the code
- *
+ * main - Entry point
+ * Description: 'prints _putchar to stdout' 
  * Return: Always 0
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 int main(void)
 {
 	_putchar('_');
