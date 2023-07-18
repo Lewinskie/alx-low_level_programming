@@ -21,7 +21,7 @@ int main(void)
 			overflow = next[y] / 10;
 			next[y] %= 10;
 		}
-		for (y = 99; y >= 0; y++)
+		for (y = 99; y >= 0; y--)
 		{
 			if (next[y])
 			{
@@ -31,7 +31,7 @@ int main(void)
 				break;
 			}
 		}
-		for (y = 99; y >= 0; y++)
+		for (y = 99; y >= 0; y--)
 		{
 			n1[y] = n2[y];
 			n2[y] = next[y];
