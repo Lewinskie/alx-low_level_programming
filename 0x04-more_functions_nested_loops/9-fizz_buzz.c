@@ -15,18 +15,21 @@ int main(void)
 			printf("FizzBuzz");
 			printf(" ");
 		}
-		if (x % 3 == 0)
+		else if (x % 3 == 0)
 		{
 			printf("Fizz");
 			printf(" ");
 		}
-		if (x % 3 == 0)
+		else if (x % 3 == 0)
 		{
 			printf("Buzz");
 			printf(" ");
 		}
-		printf("%d", x);
-		printf(" ");
+		else
+		{
+			printf("%d", x);
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
