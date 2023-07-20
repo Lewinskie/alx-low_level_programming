@@ -9,13 +9,17 @@ int main(void)
 {
 	long int x, n = 612852475143;
 
+	while (n % 2 == 0)
+	{
+		n = n / 2;
+	}
 	for (x = 3; x < 782849; x += 2)
 	{
 		while ((n % x == 0) && (n != x))
 		{
 			n = n / x;
 		}
-		printf("%lu\n", n);
 	}
+	printf("%lu\n", n);
 	return (0);
 }
