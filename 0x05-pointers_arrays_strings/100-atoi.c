@@ -9,27 +9,30 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1; /*initializing sign  to + */
-	int result = 0;
-	int x = 0;
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isi = 0;
 
 	/* handle the sign characters */
-	while (s[x] == '-' || s[x] == '+')
+	while (s[c] == 45)
 	{
 		if (s[x] == '-')
 		{
-			sign *= -1; /* change sign to - if '-' found */
+			min *= -1;
 		}
-		x++;
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;
+		}
+		if (isi == 1)
+		{
+			break;
+		}
+		c++;
 	}
-	/* convert reaining digits to int */
-	while (s[x] >= '0' && s[x] <= '9')
-	{
-		/* check for overflow before multiplying by 10 */
-		if (result > (INT_MAX - (s[x] - '0')) / 10)
-			return (sign == 1 ? INT_MAX : INT_MIN);
-		result = result * 10 + (s[x] - '0');
-		x++;
-	}
-	return (result * sign);
+	ni *= min;
+	return (ni);
 }
