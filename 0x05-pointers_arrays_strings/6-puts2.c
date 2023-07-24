@@ -9,14 +9,9 @@ void puts2(char *str)
 {
 	int x = 0;
 
-	while (str[x] != '\0')
+	for (x = 0; str[x] != '\0'; x += 2)
 	{
 		_putchar(str[x]);
-		x += 2;
-
-		/* check if we reached end of string */
-		if (str[x] == '\0')
-			break;
 	}
 	_putchar('\n');
 }
