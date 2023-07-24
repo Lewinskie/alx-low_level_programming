@@ -13,6 +13,10 @@ void puts2(char *str)
 	{
 		_putchar(str[x]);
 		x += 2;
+
+		/* check if we reached end of string */
+		if (str[x] == '\0')
+			break;
 	}
 	_putchar('\n');
 }
