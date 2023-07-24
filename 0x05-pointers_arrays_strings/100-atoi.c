@@ -17,7 +17,7 @@ int _atoi(char *s)
 	/* handle the sign characters */
 	while (s[c] == 45)
 	{
-		if (s[x] == '-')
+		if (s[c] == '-')
 		{
 			min *= -1;
 		}
