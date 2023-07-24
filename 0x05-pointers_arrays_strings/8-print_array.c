@@ -11,16 +11,18 @@ void print_array(int *a, int n)
 {
 	int x;
 
-	if (n > 0)
+	if (n <= 0)
 	{
-		for (x = 0; x < n; x++)
-		{
-			printf("%d", a[x]);
-
-			/* prints comma and space for all apart from last one */
-			if (x < n - 1)
-				printf(", ");
-		}
 		printf("\n");
+		return;
 	}
+	for (x = 0; x < n; x++)
+	{
+		printf("%d", a[x]);
+
+		/* prints comma and space for all apart from last one */
+		if (x < n - 1)
+			printf(", ");
+	}
+	printf("\n");
 }
