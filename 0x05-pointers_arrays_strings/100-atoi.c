@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int c = 0;
 	unsigned int ni = 0;
 	int min = 1;
-	int isi = 0;
 
 	/* handle the sign characters */
 	if (s[c] == '-')
@@ -28,16 +27,4 @@ int _atoi(char *s)
 	}
 	ni *= min;
 	return ni;
-}
-int main()
-{
-	char str[] = "1234";
-	int result = _atoi(str);
-	printf("Result: %d\n", result);
-
-	char str2[] = "-567";
-	int result2 = _atoi(str2);
-	printf("Result2: %d\n", result2);
-
-	return (0);
 }
