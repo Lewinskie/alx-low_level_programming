@@ -8,11 +8,20 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int x, y;
+	char *x = dest; /* pointer to end of dest string */
 
-	for (x = 0; dest[x] != '\0'; x++)
-		for (y = 0; src[y] != '\0'; y++)
-			dest[x+y] = src[y];
-	dest[x+y] = '\0';
+	/* move the pointer to end of dest string */
+	while (*x != '\0')
+		x++;
+	/* append src string to dest string */
+	while (*src != '\0')
+	{
+		*x = *src;
+		x++;
+		src++;
+	}
+	/* add trminating null byte */
+	*x = '\0';
+
 	return dest;
 }
