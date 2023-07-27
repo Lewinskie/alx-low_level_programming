@@ -6,7 +6,7 @@
  * @s2: string 2
  * Return: Always 0
  */
-int _strcmp(char * s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0' && *s2 != '\0')
 	{
@@ -24,5 +24,5 @@ int _strcmp(char * s1, char *s2)
 	{
 		return (-*s2);
 	}
-	return 0; /* Return 0 if both strings are identical */
+	return (0); /* Return 0 if both strings are identical */
 }
