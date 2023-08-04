@@ -4,7 +4,7 @@
 /**
  * main - entry point
  * @argc: count of arguments
- * @argv[]: the commands 
+ * @argv: the commands
  * Return: the command name in index 0
  */
 int main(int argc, char *argv[])
