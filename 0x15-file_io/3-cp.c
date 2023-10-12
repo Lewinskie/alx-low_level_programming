@@ -17,6 +17,12 @@ void error_exit(int code, const char *message)
 	exit(code);
 }
 
+/**
+ * main - entry point
+ * @argc: arg c
+ * @argv: argv
+ * Return: return 0
+ */
 int main(int argc, char *argv[])
 {
 	int file_from_fd, file_to_fd;
