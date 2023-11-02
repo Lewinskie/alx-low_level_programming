@@ -1,4 +1,4 @@
-nclude "hash_tables.h"
+#include "hash_tables.h"
 /**
  ** hash_djb2 - djb2 algo
  ** @str: string
